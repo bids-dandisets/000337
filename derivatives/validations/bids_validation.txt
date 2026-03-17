@@ -5,11 +5,11 @@ The use of license name abbreviations is RECOMMENDED for specifying a license
 (see [Licenses](SPEC_ROOT/appendices/licenses.md)).
 The corresponding full license text MAY be specified in an additional
 `LICENSE` file.
- - rules.dataset_metadata.dataset_description
+
 
 		GeneratedBy
 		/dataset_description.json - Field description: Used to specify provenance of the dataset.
- - rules.dataset_metadata.dataset_description
+
 
 		SourceDatasets
 		/dataset_description.json - Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).
@@ -18,7 +18,7 @@ Valid keys in each object include `"URL"`, `"DOI"` (see
 `"Version"` with
 [string](https://www.w3schools.com/js/js_json_datatypes.asp)
 values.
- - rules.dataset_metadata.dataset_description
+
 
 	Please visit https://neurostars.org/search?q=JSON_KEY_RECOMMENDED for existing conversations about this issue.
 
@@ -28,1064 +28,93 @@ will make DOI registration from dataset metadata impossible.
 
 		Authors
 		/dataset_description.json - Field description: List of individuals who contributed to the creation/curation of the dataset.
- - rules.dataset_metadata.dataset_authors
+
 
 	Please visit https://neurostars.org/search?q=NO_AUTHORS for existing conversations about this issue.
 
 	[WARNING] TSV_COLUMN_TYPE_REDEFINED A column required in a TSV file has been redefined in a sidecar file. This redefinition is being ignored.
 		x
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
+		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json - Format "string" must be number
+		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json - Format "string" must be number
+
+		11 more files with the same issue
 
 		y
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
+		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json - Format "string" must be number
+		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json - Format "string" must be number
+
+		11 more files with the same issue
 
 		impedance
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_electrodes.json - Format "string" must be number - rules.tabular_data.microephys.microephysElectrodes
+		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json - Format "string" must be number
+		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json - Format "string" must be number
+
+		11 more files with the same issue
 
 	Please visit https://neurostars.org/search?q=TSV_COLUMN_TYPE_REDEFINED for existing conversations about this issue.
 
 	[WARNING] SIDECAR_KEY_RECOMMENDED A data file's JSON sidecar is missing a key listed as recommended.
-		InstitutionAddress
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: The address of the institution in charge of the equipment that produced the
-measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-
-		InstitutionalDepartmentName
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: The department in the institution in charge of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysInstitutionInformation
-
 		Manufacturer
 		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
+
 		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Manufacturer of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
 
-		ManufacturersModelName
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Manufacturer's model name of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
 
-		ManufacturersModelVersion
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Manufacturer's model version of the equipment that produced the measurements.
- - rules.sidecars.microephys.microephysSetup
-
-		RecordingSetupName
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Custom name of the recording setup.
- - rules.sidecars.microephys.microephysSetup
-
-		DeviceSerialNumber
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: The serial number of the equipment that produced the measurements.
-A pseudonym can also be used to prevent the equipment from being
-identifiable, so long as each pseudonym is unique within the dataset.
- - rules.sidecars.microephys.microephysSetup
-
-		SoftwareName
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Name of the software that was used to present the stimuli.
- - rules.sidecars.microephys.microephysSetup
-
-		SoftwareVersions
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Manufacturer's designation of software version of the equipment that produced
-the measurements.
- - rules.sidecars.microephys.microephysSetup
+		11 more files with the same issue
 
 		RecordingDuration
 		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
+
 		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Length of the recording in seconds (for example, `3600`).
- - rules.sidecars.microephys.microephysSetup
+
+
+		11 more files with the same issue
 
 		RecordingType
 		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
 `"epoched"`, where `"epoched"` is limited to time windows about events of
 interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
+
 		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
 `"epoched"`, where `"epoched"` is limited to time windows about events of
 interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Defines whether the recording is `"continuous"`, `"discontinuous"`, or
-`"epoched"`, where `"epoched"` is limited to time windows about events of
-interest (for example, stimulus presentations or subject responses).
- - rules.sidecars.microephys.microephysSetup
 
-		PharmaceuticalName
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Name of pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
 
-		PharmaceuticalDoseAmount
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Dose amount of administered pharmaceutical.
- - rules.sidecars.microephys.microephysPharmaceuticals
-
-		PharmaceuticalDoseUnits
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Unit format relating to pharmaceutical dose
-(for example, `"mg"` or `"mg/kg"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-
-		PharmaceuticalDoseRegimen
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Details of the pharmaceutical dose regimen.
-Either adequate description or short-code relating to regimen documented
-elsewhere (for example, `"single oral bolus"`).
- - rules.sidecars.microephys.microephysPharmaceuticals
-
-		PharmaceuticalDoseTime
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Time of administration of pharmaceutical dose, relative to time zero.
-For an infusion, this should be a vector with two elements specifying the
-start and end of the infusion period. For more complex dose regimens,
-the regimen description should be complete enough to enable unambiguous
-interpretation of `"PharmaceuticalDoseTime"`.
-Unit format of the specified pharmaceutical dose time MUST be seconds.
- - rules.sidecars.microephys.microephysPharmaceuticals
+		11 more files with the same issue
 
 		BodyPart
 		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
+
 		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Body part of the organ / body region scanned.
- - rules.sidecars.microephys.microephysSample
+
+
+		11 more files with the same issue
 
 		BodyPartDetails
 		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
+
 		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Additional details about body part or location (for example: `"corpus callosum"`).
- - rules.sidecars.microephys.microephysSample
 
-		SampleEnvironment
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Environment in which the sample was imaged. MUST be one of: `"in vivo"`, `"ex vivo"`
-or `"in vitro"`.
- - rules.sidecars.microephys.microephysSample
 
-		TaskName
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Name of the task.
-No two tasks should have the same name.
-The task label included in the filename MAY be derived from this `"TaskName"` field
-by removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),
-and potentially replacing spaces with `+` to ease readability.
-For example `"TaskName"` `"faces n-back"` or `"head nodding"` could correspond to task labels
-`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.
- - rules.sidecars.microephys.microephysTaskInformation
-
-		TaskDescription
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Longer description of the task.
- - rules.sidecars.microephys.microephysTaskInformation
-
-		Instructions
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: Text of the instructions given to participants before the recording.
- - rules.sidecars.microephys.microephysTaskInformation
-
-		CogAtlasID
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)
-Task term.
- - rules.sidecars.microephys.microephysTaskInformation
-
-		CogPOID
-		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb - Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)
-of the corresponding [CogPO](http://www.cogpo.org/) term.
- - rules.sidecars.microephys.microephysTaskInformation
+		11 more files with the same issue
 
 	Please visit https://neurostars.org/search?q=SIDECAR_KEY_RECOMMENDED for existing conversations about this issue.
 
 	[ERROR] JSON_KEY_REQUIRED A JSON flle is missing a key listed as required.
 		Name
 		/dataset_description.json - Field description: Name of the dataset.
- - rules.dataset_metadata.dataset_description
+
 
 	Please visit https://neurostars.org/search?q=JSON_KEY_REQUIRED for existing conversations about this issue.
+
+	[ERROR] TSV_COLUMN_MISSING A required column is missing
+		sampling_frequency
+		/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_channels.tsv - Required initial column 5 not found.
+		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_channels.tsv - Required initial column 5 not found.
+
+		11 more files with the same issue
+
+	Please visit https://neurostars.org/search?q=TSV_COLUMN_MISSING for existing conversations about this issue.
 
 	[ERROR] JSON_SCHEMA_VALIDATION_ERROR Invalid JSON sidecar file. The sidecar is not formatted according the schema.
 		SamplingFrequency
@@ -1093,67 +122,14 @@ of the corresponding [CogPO](http://www.cogpo.org/) term.
 
 Field description: Sampling frequency (in Hz) of all the data in the recording,
 regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
+
 		/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.json - must be number
 
 Field description: Sampling frequency (in Hz) of all the data in the recording,
 regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.json - must be number
 
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.json - must be number
 
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
-		/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.json - must be number
-
-Field description: Sampling frequency (in Hz) of all the data in the recording,
-regardless of their type (for example, `2400`).
- - rules.sidecars.microephys.microephysSetup
+		11 more files with the same issue
 
 	Please visit https://neurostars.org/search?q=JSON_SCHEMA_VALIDATION_ERROR for existing conversations about this issue.
 
