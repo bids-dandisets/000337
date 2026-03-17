@@ -60,6 +60,14 @@
         "issueMessage": "Field description: List of individuals who contributed to the creation/curation of the dataset.\n"
       },
       {
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
+      },
+      {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
         "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
@@ -85,51 +93,11 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
         "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -144,30 +112,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
         "severity": "warning",
@@ -181,46 +125,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -239,52 +143,12 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -312,51 +176,11 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
         "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -371,30 +195,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
         "severity": "warning",
@@ -408,46 +208,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -467,99 +227,11 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
         "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -574,30 +246,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
         "severity": "warning",
@@ -614,46 +262,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
         "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
         "severity": "warning",
@@ -667,54 +275,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSample",
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -741,20 +301,12 @@
         "severity": "warning"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -763,30 +315,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -801,30 +329,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
         "severity": "warning",
@@ -838,46 +342,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -896,54 +360,6 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
-      },
-      {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
         "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
@@ -968,6 +384,14 @@
         "severity": "warning"
       },
       {
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
+      },
+      {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
         "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
@@ -990,22 +414,6 @@
         "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_electrodes.json",
         "rule": "rules.tabular_data.microephys.microephysElectrodes",
         "severity": "warning"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -1014,30 +422,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -1052,30 +436,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
         "severity": "warning",
@@ -1089,46 +449,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -1147,52 +467,12 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -1219,20 +499,12 @@
         "severity": "warning"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -1241,30 +513,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -1279,30 +527,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
         "severity": "warning",
@@ -1319,46 +543,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
         "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
         "severity": "warning",
@@ -1372,54 +556,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSample",
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -1446,20 +582,12 @@
         "severity": "warning"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -1468,30 +596,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -1506,30 +610,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
         "severity": "warning",
@@ -1546,46 +626,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "BodyPart",
         "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
         "severity": "warning",
@@ -1599,54 +639,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSample",
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -1674,51 +666,11 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
         "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -1733,30 +685,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
         "severity": "warning",
@@ -1770,46 +698,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -1828,68 +716,12 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -1898,30 +730,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -1936,30 +744,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
         "severity": "warning",
@@ -1973,46 +757,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -2031,52 +775,12 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -2104,51 +808,11 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
         "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -2163,30 +827,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
         "severity": "warning",
@@ -2200,46 +840,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -2258,52 +858,12 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -2331,51 +891,11 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
         "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -2390,30 +910,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
         "severity": "warning",
@@ -2427,46 +923,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -2485,52 +941,12 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       },
       {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
@@ -2558,51 +974,11 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "Manufacturer",
         "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -2617,30 +993,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
         "severity": "warning",
@@ -2654,46 +1006,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -2712,54 +1024,6 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
-      },
-      {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
         "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
@@ -2784,6 +1048,14 @@
         "severity": "warning"
       },
       {
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
+      },
+      {
         "code": "TSV_COLUMN_TYPE_REDEFINED",
         "issueMessage": "Format \"string\" must be number",
         "subCode": "x",
@@ -2806,22 +1078,6 @@
         "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_electrodes.json",
         "rule": "rules.tabular_data.microephys.microephysElectrodes",
         "severity": "warning"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionAddress",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The address of the institution in charge of the equipment that produced the\nmeasurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "InstitutionalDepartmentName",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysInstitutionInformation",
-        "issueMessage": "Field description: The department in the institution in charge of the equipment that produced\nthe measurements.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -2830,30 +1086,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelName",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model name of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "ManufacturersModelVersion",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's model version of the equipment that produced the measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "RecordingSetupName",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Custom name of the recording setup.\n"
       },
       {
         "code": "JSON_SCHEMA_VALIDATION_ERROR",
@@ -2868,30 +1100,6 @@
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "DeviceSerialNumber",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: The serial number of the equipment that produced the measurements.\nA pseudonym can also be used to prevent the equipment from being\nidentifiable, so long as each pseudonym is unique within the dataset.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareName",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Name of the software that was used to present the stimuli.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SoftwareVersions",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSetup",
-        "issueMessage": "Field description: Manufacturer's designation of software version of the equipment that produced\nthe measurements.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
         "subCode": "RecordingDuration",
         "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
         "severity": "warning",
@@ -2905,46 +1113,6 @@
         "severity": "warning",
         "rule": "rules.sidecars.microephys.microephysSetup",
         "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalName",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Name of pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseAmount",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Dose amount of administered pharmaceutical.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseUnits",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Unit format relating to pharmaceutical dose\n(for example, `\"mg\"` or `\"mg/kg\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseRegimen",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Details of the pharmaceutical dose regimen.\nEither adequate description or short-code relating to regimen documented\nelsewhere (for example, `\"single oral bolus\"`).\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "PharmaceuticalDoseTime",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysPharmaceuticals",
-        "issueMessage": "Field description: Time of administration of pharmaceutical dose, relative to time zero.\nFor an infusion, this should be a vector with two elements specifying the\nstart and end of the infusion period. For more complex dose regimens,\nthe regimen description should be complete enough to enable unambiguous\ninterpretation of `\"PharmaceuticalDoseTime\"`.\nUnit format of the specified pharmaceutical dose time MUST be seconds.\n"
       },
       {
         "code": "SIDECAR_KEY_RECOMMENDED",
@@ -2963,52 +1131,12 @@
         "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
       },
       {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "SampleEnvironment",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysSample",
-        "issueMessage": "Field description: Environment in which the sample was imaged. MUST be one of: `\"in vivo\"`, `\"ex vivo\"`\nor `\"in vitro\"`.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskName",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Name of the task.\nNo two tasks should have the same name.\nThe task label included in the filename MAY be derived from this `\"TaskName\"` field\nby removing all non-alphanumeric or `+` characters (that is, all except those matching `[0-9a-zA-Z+]`),\nand potentially replacing spaces with `+` to ease readability.\nFor example `\"TaskName\"` `\"faces n-back\"` or `\"head nodding\"` could correspond to task labels\n`faces+n+back` or `facesnback` and `head+nodding` or `headnodding`, respectively.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "TaskDescription",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Longer description of the task.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "Instructions",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: Text of the instructions given to participants before the recording.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogAtlasID",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [Cognitive Atlas](https://www.cognitiveatlas.org/)\nTask term.\n"
-      },
-      {
-        "code": "SIDECAR_KEY_RECOMMENDED",
-        "subCode": "CogPOID",
-        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
-        "severity": "warning",
-        "rule": "rules.sidecars.microephys.microephysTaskInformation",
-        "issueMessage": "Field description: [URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)\nof the corresponding [CogPO](http://www.cogpo.org/) term.\n"
+        "code": "TSV_COLUMN_MISSING",
+        "subCode": "sampling_frequency",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_channels.tsv",
+        "issueMessage": "Required initial column 5 not found.",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "error"
       }
     ],
     "codeMessages": {
@@ -3018,6 +1146,7 @@
       "JSON_KEY_REQUIRED": "A JSON flle is missing a key listed as required.",
       "JSON_KEY_RECOMMENDED": "A JSON file is missing a key listed as recommended.",
       "NO_AUTHORS": "The Authors field of dataset_description.json should contain an array of fields -\nwith one author per field. This was triggered because there are no authors, which\nwill make DOI registration from dataset metadata impossible.\n",
+      "TSV_COLUMN_MISSING": "A required column is missing",
       "TSV_COLUMN_TYPE_REDEFINED": "A column required in a TSV file has been redefined in a sidecar file. This redefinition is being ignored.",
       "SIDECAR_KEY_RECOMMENDED": "A data file's JSON sidecar is missing a key listed as recommended.",
       "JSON_SCHEMA_VALIDATION_ERROR": "Invalid JSON sidecar file. The sidecar is not formatted according the schema."
