@@ -1,0 +1,1050 @@
+{
+  "issues": {
+    "issues": [
+      {
+        "code": "UNKNOWN_BIDS_VERSION",
+        "location": "/dataset_description.json",
+        "rule": "rules.checks.dataset.UnknownVersion",
+        "severity": "ignore"
+      },
+      {
+        "code": "README_FILE_MISSING",
+        "location": "/dataset_description.json",
+        "rule": "rules.checks.hints.ReadmeFileMissing",
+        "severity": "ignore"
+      },
+      {
+        "code": "TOO_FEW_AUTHORS",
+        "location": "/dataset_description.json",
+        "rule": "rules.checks.hints.TooFewAuthors",
+        "severity": "ignore"
+      },
+      {
+        "code": "JSON_KEY_REQUIRED",
+        "subCode": "Name",
+        "location": "/dataset_description.json",
+        "severity": "error",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Name of the dataset.\n"
+      },
+      {
+        "code": "JSON_KEY_RECOMMENDED",
+        "subCode": "License",
+        "location": "/dataset_description.json",
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: The license for the dataset.\nThe use of license name abbreviations is RECOMMENDED for specifying a license\n(see [Licenses](SPEC_ROOT/appendices/licenses.md)).\nThe corresponding full license text MAY be specified in an additional\n`LICENSE` file.\n"
+      },
+      {
+        "code": "JSON_KEY_RECOMMENDED",
+        "subCode": "GeneratedBy",
+        "location": "/dataset_description.json",
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Used to specify provenance of the dataset.\n"
+      },
+      {
+        "code": "JSON_KEY_RECOMMENDED",
+        "subCode": "SourceDatasets",
+        "location": "/dataset_description.json",
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_description",
+        "issueMessage": "Field description: Used to specify the locations and relevant attributes of all source datasets (BIDS or not).\nValid keys in each object include `\"URL\"`, `\"DOI\"` (see\n[URI](SPEC_ROOT/common-principles.md#uniform-resource-indicator)), and\n`\"Version\"` with\n[string](https://www.w3schools.com/js/js_json_datatypes.asp)\nvalues.\n"
+      },
+      {
+        "code": "NO_AUTHORS",
+        "subCode": "Authors",
+        "location": "/dataset_description.json",
+        "severity": "warning",
+        "rule": "rules.dataset_metadata.dataset_authors",
+        "issueMessage": "Field description: List of individuals who contributed to the creation/curation of the dataset.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-1089230952/ses-1089232011/icephys/sub-1089230952_ses-1089232011_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-1089230952/ses-1089231177/icephys/sub-1089230952_ses-1089231177_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1047717119/ses-1053917650/icephys/sub-1047717119_ses-1053917650_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-1047717119/ses-1053917889/icephys/sub-1047717119_ses-1053917889_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-971847052/ses-971847789/icephys/sub-971847052_ses-971847789_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-971847052/ses-971847307/icephys/sub-971847052_ses-971847307_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-1089233462/ses-1089235110/icephys/sub-1089233462_ses-1089235110_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-1089233462/ses-1089235664/icephys/sub-1089233462_ses-1089235664_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-859638045/ses-872843906/icephys/sub-859638045_ses-872843906_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-893495139/ses-901315954/icephys/sub-893495139_ses-901315954_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-847868497/ses-847870571/icephys/sub-847868497_ses-847870571_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-847868497/ses-847870147/icephys/sub-847868497_ses-847870147_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "sampling_frequency",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_channels.json",
+        "rule": "rules.tabular_data.microephys.microephysChannels",
+        "severity": "warning"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "Manufacturer",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Manufacturer of the equipment that produced the measurements.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingDuration",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Length of the recording in seconds (for example, `3600`).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "RecordingType",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSetup",
+        "issueMessage": "Field description: Defines whether the recording is `\"continuous\"`, `\"discontinuous\"`, or\n`\"epoched\"`, where `\"epoched\"` is limited to time windows about events of\ninterest (for example, stimulus presentations or subject responses).\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPart",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Body part of the organ / body region scanned.\n"
+      },
+      {
+        "code": "SIDECAR_KEY_RECOMMENDED",
+        "subCode": "BodyPartDetails",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_icephys.nwb",
+        "severity": "warning",
+        "rule": "rules.sidecars.microephys.microephysSample",
+        "issueMessage": "Field description: Additional details about body part or location (for example: `\"corpus callosum\"`).\n"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "x",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "y",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      },
+      {
+        "code": "TSV_COLUMN_TYPE_REDEFINED",
+        "issueMessage": "Format \"string\" must be number",
+        "subCode": "impedance",
+        "location": "/sub-847868497/ses-847870440/icephys/sub-847868497_ses-847870440_electrodes.json",
+        "rule": "rules.tabular_data.microephys.microephysElectrodes",
+        "severity": "warning"
+      }
+    ],
+    "codeMessages": {
+      "UNKNOWN_BIDS_VERSION": "The BIDSVersion field of 'dataset_description.json' does not match a known release.\nThe BIDS Schema used for validation may be out of date.\n",
+      "README_FILE_MISSING": "The recommended file /README is missing.\nSee Section 03 (Modality agnostic files) of the BIDS specification.\n",
+      "TOO_FEW_AUTHORS": "The 'Authors' field of 'dataset_description.json' should contain an array of values -\nwith one author per value.\nThis was triggered based on the presence of only one author field.\nPlease ignore if all contributors are already properly listed.\n",
+      "JSON_KEY_REQUIRED": "A JSON flle is missing a key listed as required.",
+      "JSON_KEY_RECOMMENDED": "A JSON file is missing a key listed as recommended.",
+      "NO_AUTHORS": "The Authors field of dataset_description.json should contain an array of fields -\nwith one author per field. This was triggered because there are no authors, which\nwill make DOI registration from dataset metadata impossible.\n",
+      "SIDECAR_KEY_RECOMMENDED": "A data file's JSON sidecar is missing a key listed as recommended.",
+      "TSV_COLUMN_TYPE_REDEFINED": "A column required in a TSV file has been redefined in a sidecar file. This redefinition is being ignored."
+    }
+  },
+  "summary": {
+    "sessions": [
+      "1089232011",
+      "1089231177",
+      "1053917650",
+      "1053917889",
+      "971847789",
+      "971847307",
+      "1089235110",
+      "1089235664",
+      "872843906",
+      "901315954",
+      "847870571",
+      "847870147",
+      "847870440"
+    ],
+    "subjects": [
+      "1089230952",
+      "1047717119",
+      "971847052",
+      "1089233462",
+      "859638045",
+      "893495139",
+      "847868497"
+    ],
+    "subjectMetadata": [],
+    "tasks": [],
+    "modalities": [
+      "microephys"
+    ],
+    "secondaryModalities": [],
+    "totalFiles": 105,
+    "size": 87748,
+    "dataProcessed": false,
+    "pet": {},
+    "dataTypes": [
+      "icephys"
+    ],
+    "schemaVersion": "1.3.0-dev"
+  }
+}
